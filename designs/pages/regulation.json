@@ -1,0 +1,56 @@
+[
+    {
+        "id": "sd_eS3ZSLyNOHfsH56r",
+        "type": "tab",
+        "createdDate": "2024-05-22T09:13:22.312Z",
+        "label": "regulation",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "regulationComponent"
+    },
+    {
+        "id": "sd_nHD1aAS1VlNkamo4",
+        "type": "OnInit",
+        "z": "sd_eS3ZSLyNOHfsH56r",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_nHD1aAS1VlNkamo4",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_xROL0Y2fL8shU23C"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "regulationComponent"
+    },
+    {
+        "id": "sd_xROL0Y2fL8shU23C",
+        "type": "PageVariables",
+        "z": "sd_eS3ZSLyNOHfsH56r",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_xROL0Y2fL8shU23C",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "regulationComponent",
+        "generated": true
+    }
+]

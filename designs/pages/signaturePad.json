@@ -1,0 +1,56 @@
+[
+    {
+        "id": "sd_nxJfEiOcdy8AGcw0",
+        "type": "tab",
+        "createdDate": "2024-05-13T12:53:28.031Z",
+        "label": "signaturePad",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "signaturePadComponent"
+    },
+    {
+        "id": "sd_uMfxa7ES1YMNQkWK",
+        "type": "OnInit",
+        "z": "sd_nxJfEiOcdy8AGcw0",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_uMfxa7ES1YMNQkWK",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_g5G9ozNbZmQHIU4L"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "signaturePadComponent"
+    },
+    {
+        "id": "sd_g5G9ozNbZmQHIU4L",
+        "type": "PageVariables",
+        "z": "sd_nxJfEiOcdy8AGcw0",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_g5G9ozNbZmQHIU4L",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "signaturePadComponent",
+        "generated": true
+    }
+]
