@@ -72,6 +72,13 @@
                     "type": "this.page",
                     "value": "result"
                 }
+            },
+            {
+                "textIp": "uploadedFile2",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "new FormData()"
+                }
             }
         ],
         "functionName": "sd_ZzOvZ6UEt9Cuxr6f",
@@ -110,8 +117,8 @@
         "flow_type": "sync",
         "functionName": "filterData",
         "category": "General",
-        "x": 160,
-        "y": 200,
+        "x": 145,
+        "y": 220,
         "wires": [
             [
                 "sd_zcMESMzUzzycGX5x"
@@ -131,8 +138,8 @@
         "script": "console.log(bh.input.filter.target.value);\npage.filteredOptions = page.stateGroups.filter(el=>el.letter === bh.input.filter.target.value);",
         "functionName": "sd_zcMESMzUzzycGX5x",
         "category": "Function",
-        "x": 300,
-        "y": 200,
+        "x": 305,
+        "y": 220,
         "wires": [
             []
         ],
@@ -328,7 +335,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": " page.stateGroups= [\n  { letter: 'A', names: ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan'] },\n  { letter: 'B', names: ['Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi'] },\n  { letter: 'C', names: ['Cabo Verde', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic'] },\n  { letter: 'D', names: ['Denmark', 'Djibouti', 'Dominica', 'Dominican Republic'] },\n  { letter: 'E', names: ['Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia'] },\n  { letter: 'F', names: ['Fiji', 'Finland', 'France'] },\n  { letter: 'G', names: ['Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana'] },\n  { letter: 'H', names: ['Haiti', 'Honduras', 'Hungary'] },\n  { letter: 'I', names: ['Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast'] },\n  { letter: 'J', names: ['Jamaica', 'Japan', 'Jordan'] },\n  { letter: 'K', names: ['Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan'] },\n  { letter: 'L', names: ['Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg'] },\n  { letter: 'M', names: ['Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar'] },\n  { letter: 'N', names: ['Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway'] },\n  { letter: 'O', names: ['Oman'] },\n  { letter: 'P', names: ['Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal'] },\n  { letter: 'Q', names: ['Qatar'] },\n  { letter: 'R', names: ['Romania', 'Russia', 'Rwanda'] },\n  { letter: 'S', names: ['Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria'] },\n  { letter: 'T', names: ['Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Timor-Leste', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu'] },\n  { letter: 'U', names: ['Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan'] },\n  { letter: 'V', names: ['Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam'] },\n  { letter: 'Y', names: ['Yemen'] },\n  { letter: 'Z', names: ['Zambia', 'Zimbabwe'] }\n]\n\n  \n   \n\n\n\n\npage.registerForm = new FormGroup({\n    title: new FormControl(''),\n    name: new FormControl(''),\n    surname: new FormControl(''),\n    race: new FormControl(''),\n    email: new FormControl(''),\n    income: new FormControl(''),\n    depedents: new FormControl(''),\n    marital: new FormControl(''),\n    qualification: new FormControl(''),\n    country: new FormControl(''),\n    // countryName: new FormControl(''),\n    address: new FormControl(''),\n    sourceOfIncome: new FormControl(''),\n    additionalIncome: new FormControl(false ),\n    tax: new FormControl(false),\n\n});\n\n",
+        "script": " page.stateGroups= [\n  { letter: 'A', names: ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan'] },\n  { letter: 'B', names: ['Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi'] },\n  { letter: 'C', names: ['Cabo Verde', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic'] },\n  { letter: 'D', names: ['Denmark', 'Djibouti', 'Dominica', 'Dominican Republic'] },\n  { letter: 'E', names: ['Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia'] },\n  { letter: 'F', names: ['Fiji', 'Finland', 'France'] },\n  { letter: 'G', names: ['Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana'] },\n  { letter: 'H', names: ['Haiti', 'Honduras', 'Hungary'] },\n  { letter: 'I', names: ['Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast'] },\n  { letter: 'J', names: ['Jamaica', 'Japan', 'Jordan'] },\n  { letter: 'K', names: ['Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan'] },\n  { letter: 'L', names: ['Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg'] },\n  { letter: 'M', names: ['Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar'] },\n  { letter: 'N', names: ['Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway'] },\n  { letter: 'O', names: ['Oman'] },\n  { letter: 'P', names: ['Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal'] },\n  { letter: 'Q', names: ['Qatar'] },\n  { letter: 'R', names: ['Romania', 'Russia', 'Rwanda'] },\n  { letter: 'S', names: ['Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria'] },\n  { letter: 'T', names: ['Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Timor-Leste', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu'] },\n  { letter: 'U', names: ['Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan'] },\n  { letter: 'V', names: ['Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam'] },\n  { letter: 'Y', names: ['Yemen'] },\n  { letter: 'Z', names: ['Zambia', 'Zimbabwe'] }\n]\n\n  \n   \n\n\n\n\npage.registerForm = new FormGroup({\n    title: new FormControl(''),\n    name: new FormControl(''),\n    surname: new FormControl(''),\n    race: new FormControl(''),\n    email: new FormControl(''),\n    income: new FormControl(''),\n    depedents: new FormControl(''),\n    marital: new FormControl(''),\n    qualification: new FormControl(''),\n    country: new FormControl(''),\n    // countryName: new FormControl(''),\n    address: new FormControl(''),\n    sourceOfIncome: new FormControl(''),\n    additionalIncome: new FormControl(false ),\n    tax: new FormControl(false),\n   \n\n});\n\n\n\n",
         "functionName": "sd_Iu8ygKxUV790J4YD",
         "category": "Function",
         "x": 385,
@@ -371,7 +378,7 @@
         "direction": "ltr",
         "functionName": "sd_BttHs1eBZm8wwzJF",
         "category": "General",
-        "x": 745,
+        "x": 825,
         "y": 320,
         "wires": [
             []
@@ -540,8 +547,98 @@
         "y": 320,
         "wires": [
             [
+                "sd_b0wDVtLpQBWtosez"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "registerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_b0wDVtLpQBWtosez",
+        "type": "Navigation",
+        "z": "sd_tICxe7qPhqRvK1jx",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/regulations",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
+        "functionName": "sd_b0wDVtLpQBWtosez",
+        "category": "Navigation",
+        "x": 725,
+        "y": 320,
+        "wires": [
+            [
                 "sd_BttHs1eBZm8wwzJF"
             ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "registerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_vyoBFVHNWiJCKrm9",
+        "type": "PageStart",
+        "z": "sd_tICxe7qPhqRvK1jx",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "fileUpload2",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "n",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "fileUpload2",
+        "category": "General",
+        "x": 145,
+        "y": 120,
+        "wires": [
+            [
+                "sd_bvzUcoWDbm3cBKQm"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "registerComponent"
+    },
+    {
+        "id": "sd_bvzUcoWDbm3cBKQm",
+        "type": "Script",
+        "z": "sd_tICxe7qPhqRvK1jx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "//file Upload\n\n// page.uploadedfiles:file[][] = []\n// const files: FileList = event.target.files;\n//     console.log(files)\n//     const fileArray: File[] = [];\n//     for (let i = 0; i < files.length; i++) {\n//       fileArray.push(files[i]);\n//     }\n//     page.uploadedfiles[n] = fileArray;;\n\nconst file: File | null = bh.input.event.target.files?.[0] || null;\nconsole.log(file);\n\nif (file) {\n \n  page.uploadedFile.append('ID', file);\n  \n} else {\n  console.log('No file is uploaded')\n  // Handle the case where no file is selected\n}\n\n// page.uploadedFile = {ID: page.uploadedFile}\n\nconsole.log(page.uploadedFile)",
+        "functionName": "sd_bvzUcoWDbm3cBKQm",
+        "category": "Function",
+        "x": 265,
+        "y": 120,
+        "wires": [
+            []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

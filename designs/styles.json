@@ -66,6 +66,10 @@
         "box",
         "fra-btn",
         "sign-bottom",
-        "signature-component-border"
+        "signature-component-border",
+        "border-white",
+        "signature-btn",
+        "white",
+        "bg-black"
     ]
 }

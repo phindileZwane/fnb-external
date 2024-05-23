@@ -9700,7 +9700,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "<!-- <mat-label>upload files</mat-label> -->\r\n  <input  id=\"file\"  type=\"file\" required >",
+                                            "_value": "<!-- <mat-label>clear unfiltered selfie</mat-label> -->\r\n  <input  id=\"file3\"  (change)='fileUpload2($event, 0)' type=\"file\" required >",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
